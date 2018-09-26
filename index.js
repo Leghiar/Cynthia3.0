@@ -2,16 +2,16 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 
 
-var prefix = "$"
+var prefix = "#"
 
 var colors = require('colors');
 
 var colors = require('colors/safe');
 
-bot.login('NDUzNjU0MzczMjE0NTg0ODMy.DfiRrQ.1zRpBlxpJWuF6m7O-Lb3Sv3aVIw')
+bot.login(process.env.TOKEN)
 
 bot.on('ready', function ()  {
-  bot.user.setActivity("Command: $help");
+  bot.user.setActivity("Command: #help");
   console.log('Connected'.green);
 });
 
@@ -64,7 +64,7 @@ footer : {
 
 bot.on('message', msg => {
   if (msg.content === prefix + 'help') {
-    msg.channel.send('__Liste des commandes :__ \n $info \n $tt \n $fabriquant \n $cri \n $deut \n $met \n $vendu \n $quizz du sphinx');
+    msg.channel.send('__Liste des commandes :__ \n #info \n #tt \n #fabriquant \n #çava?');
                                  }
 	                    });
 
@@ -84,31 +84,13 @@ bot.on('message', msg => {
 
 
 bot.on('message', msg => {
-  if (msg.content === prefix + 'deut') {
-    msg.channel.send('@everyone **deut à vendre ! :)**');
+  if (msg.content === prefix + 'çava?') {
+    msg.channel.send('oui mais on est trop dans mon ally sa me soule...');
                                  }
 	                    });
 
 bot.on('message', msg => {
-  if (msg.content === prefix + 'cri') {
-    msg.channel.send('@everyone **cristal à vendre ! :)**');
+  if (msg.content === prefix + 'faistoisoigner') {
+    msg.channel.send('Avec des antibio');
                                  }
                             });
-
-
-bot.on('message', msg => {
-  if (msg.content === prefix + 'met') {
-    msg.channel.send('@everyone **métal à vendre ! :)**');
-                                 }
-                            });
-
-bot.on('message', msg => {
-  if (msg.content === prefix + 'vendu') {
-    msg.channel.send('**Adjugé vendu !**');
-                                 }
-                            });
-
-bot.on('message', msg => {
-  if (msg.content === prefix + 'quizz du sphynx') {
-    msg.channel.send('Qu-est ce qui a 4 pattes le matin, 2 l après-midi et 3 le soir ?')     }
-});
