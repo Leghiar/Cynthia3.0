@@ -70,7 +70,7 @@ bot.on('message', msg => {
 
 bot.on('message', msg => {
   if (msg.content === prefix + 'tt') {
-  msg.channel.sendMessage('Création du bot le __07/06/2018__');
+  msg.channel.sendMessage('Création du bot le __26/09/2018__');
   console.log('Commande effectuée'.cyan);
                                        }
                      });
