@@ -91,6 +91,6 @@ bot.on('message', msg => {
 
 bot.on('message', msg => {
   if (msg.content === prefix + 'faistoisoigner') {
-    msg.channel.send('Avec des antibio');
+    msg.channel.send('Avec des antibio \n https://www.pharmacievoisin.fr/uploads/pharmacy/23703/product/50d6fc59982dc89c4f19694983d4e55d0f132284.jpg');
                                  }
                             });
